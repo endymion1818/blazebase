@@ -2,13 +2,11 @@
 // CSS
 function theme_styles() {
   wp_enqueue_style('theme_css', get_template_directory_uri() . '/assets/css/styles.min.css');
-  wp_enqueue_style('theme_fonts', 'http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600');
 }
 add_action( 'wp_enqueue_scripts', 'theme_styles');
 
 // JavaScript
 function theme_js() {
-
 
   // Conditionals for legacy IE browsers
   global $wp_scripts;
