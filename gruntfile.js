@@ -36,7 +36,7 @@ module.exports = function(grunt) {
   concat: {
     js: {
       files: {
-        'assets/js/project-headerscripts.js': ['assets/src/js/header/.js'],
+        'assets/js/project-headerscripts.js': ['assets/src/js/header/*.js'],
         'assets/js/project-footerscripts.js': ['assets/src/js/footer/*.js'],
       },
     },
@@ -56,8 +56,8 @@ module.exports = function(grunt) {
     dynamic: {
       files: [{
         expand: true,
-        cwd: 'assets/src/img/', 
-        src: ['**/*.{png,jpg,gif,svg}'], 
+        cwd: 'assets/src/img/',
+        src: ['**/*.{png,jpg,gif,svg}'],
         dest: 'assets/img/'
       }]
     }
@@ -68,18 +68,18 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-postcss');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   // grunt.loadNpmTasks('grunt-contrib-imagemin');
-  
+
   // Default task(s).
   grunt.registerTask('default', [
     'sass',
     'postcss',
     'cssmin',
-    'uglify',
     'concat',
+    'uglify',
     'jshint'
     // 'imagemin'
     ]);

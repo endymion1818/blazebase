@@ -42,6 +42,14 @@ function register_theme_menus() {
 }
 add_action('init', 'register_theme_menus');
 
+// Turns on featured image option in custom post types
+function blaze_theme_images() {
+  add_theme_support( 'post-thumbnails' );
+  // Custom image sizes
+  // add_image_size( 'testimonialimage', 56, 56, true );
+}
+add_action( 'after_setup_theme', 'blaze_theme_images' );
+
 
 // Widgets
 
@@ -225,8 +233,7 @@ function blaze_paginate($query = '') {
         ) );
 
 }
-// Featured image support in custom post types
-add_theme_support( 'post-thumbnails' );
+
 
 
 // Remove Jetpack Styles (https://css-tricks.com/snippets/wordpress/removing-jetpack-css/)

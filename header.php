@@ -36,7 +36,7 @@
               <?php
                 $args = array(
                   'theme_location' => 'header',
-                  'menu' => 'header menu',
+                  'menu' => 'Header Menu', // make sure your menu is named identically
                   'menu_class' => '',
                   'container' => 'false',
                   'items_wrap' => '<ul class="nav navbar-nav">%3$s</ul>',
