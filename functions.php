@@ -1,6 +1,10 @@
 <?php
 // CSS
 function theme_styles() {
+  // fonts from supplier if necessary
+  // wp_enqueue_style('theme_css', get_template_directory_uri() . '/assets/css/styles.min.css');
+}
+  // local styles
   wp_enqueue_style('theme_css', get_template_directory_uri() . '/assets/css/styles.min.css');
 }
 add_action( 'wp_enqueue_scripts', 'theme_styles');
@@ -17,13 +21,21 @@ function theme_js() {
   $wp_scripts->add_data('html5_shiv', 'conditional', 'lt IE 9');
   $wp_scripts->add_data('respond_js', 'conditional', 'lt IE 9');
   // Theme JS and jQuery
-  wp_enqueue_script('theme_header_js', get_template_directory_uri() . '/js/citizenfemme-headerscripts.min.js', array('jquery'), '', false);
-  wp_enqueue_script('theme_footer_js', get_template_directory_uri() . '/js/citizenfemme-footerscripts.min.js', array('jquery'), '', true);
+  wp_enqueue_script('theme_header_js', get_template_directory_uri() . '/assets/js/fireout-headerscripts.min.js', array('jquery'), '', false);
+  wp_enqueue_script('theme_footer_js', get_template_directory_uri() . '/assets/js/fireout-footerscripts.min.js', array('jquery'), '', true);
 
 }
 add_action('wp_enqueue_scripts', 'theme_js');
 
 
+// Add SVG capabilities
+
+function blaze_svg_mime_type( $mimes = array() ) {
+  $mimes['svg']  = 'image/svg+xml';
+  $mimes['svgz'] = 'image/svg+xml';
+  return $mimes;
+}
+add_filter( 'upload_mimes', 'blaze_svg_mime_type' );
 
 // Turn off Contact Form 7 styles
 add_filter( 'wpcf7_load_css', '__return_false' );
