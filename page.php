@@ -17,7 +17,7 @@ get_header(); ?>
           </div>
           <?php the_content(); ?>
 
-        <? endwhile; endif; ?>
+        <?php endwhile; endif; ?>
     </div>
     <div class="col-sm-4">
       <?php get_sidebar(); ?>

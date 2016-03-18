@@ -25,7 +25,7 @@ get_header(); ?>
           <?php the_excerpt(); ?>
         </article>
         <hr>
-        <? endwhile; endif; ?>
+      <?php endwhile; endif; ?>
     </div>
     <div class="col-sm-4">
       <?php get_sidebar( 'blog' ); ?>
