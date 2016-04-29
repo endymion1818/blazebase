@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "repository": {
     "type": "git",
-    "url": "git://github.com/blazecommunication/blazebase.git"
+    "url": "git://github.com/endymion1818/blazebase.git"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
@@ -13,6 +13,19 @@
     "grunt-contrib-jshint": "~0.10.0",
     "grunt-contrib-nodeunit": "~0.4.1",
     "grunt-contrib-sass": "^0.9.2",
-    "grunt-contrib-uglify": "^0.8.0"
-  }
+    "grunt-contrib-uglify": "^0.8.0",
+    "grunt-postcss": "^0.8.0",
+    "grunt-sass": "^1.1.0"
+  },
+  "description": "A starting point Wordpress theme with SASS Bootstrap set up, Grunt modules and a few basic templates.",
+  "bugs": {
+    "url": "https://github.com/endymion1818/blazebase/issues"
+  },
+  "homepage": "https://github.com/endymion1818/blazebase#readme",
+  "main": "gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ech design",
+  "license": "ISC"
 }

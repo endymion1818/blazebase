@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?php bloginfo('name'); ?> | <?php bloginfo('description'); ?></title>
-    <?php get_template_part('partial/favicons.php');?>
+    <?php get_template_part('partials/favicons.php');?>
     <?php wp_head(); ?>
   </head>
 
@@ -20,7 +20,6 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
-                </div>
               </button>
               <a class="navbar-brand" href="<?php bloginfo('url'); ?>">
                 <img
