@@ -49,19 +49,6 @@ module.exports = function(grunt) {
       }
     }
   },
-  jshint: {
-    beforeconcat: ['assets/src/js/*.js'],
-  },
-  imagemin: {
-    dynamic: {
-      files: [{
-        expand: true,
-        cwd: 'assets/src/img/',
-        src: ['**/*.{png,jpg,gif,svg}'],
-        dest: 'assets/img/'
-      }]
-    }
-  }
 });
 
   // Load the plugin that provides the tasks.
@@ -70,7 +57,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-jshint');
   // grunt.loadNpmTasks('grunt-contrib-imagemin');
 
   // Default task(s).
@@ -80,7 +66,6 @@ module.exports = function(grunt) {
     'cssmin',
     'concat',
     'uglify',
-    'jshint'
     // 'imagemin'
     ]);
 
