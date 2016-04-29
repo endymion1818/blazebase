@@ -1,7 +1,7 @@
 // FONT: enqueue via functions.php
 
 // Vars - here so we can override some Bootstrap defaults
-$font-family-sans-serif: 'Fjalla One', sans-serif;
+$font-family-sans-serif: sans-serif;
 $verticalrhythym: 15px;
 $moreverticalrhythym: $verticalrhythym * 2;
 $main: #E74B00; $brand-primary: $main;
@@ -18,5 +18,5 @@ $subLighten: lighten( $sub, 20% );
 // theme
 @import '_project';
 @import '_animations';
-@import '_ie';
+@import '_browserfixes';
 @import '_blazebase';
