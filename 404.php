@@ -12,7 +12,7 @@ get_header(); ?>
         <h1><?php _e('404 - page not found.'); ?></h1>
     </div>
   </div>
-  <article class="row">
+  <div class="row">
     <div class="col-sm-8">
       <p><?php _e('I\'m afraid that page cannot be found. Please choose a page from the site map below,');?>
         <a href="<?php bloginfo('url');?>">
@@ -70,7 +70,7 @@ get_header(); ?>
      <div class="col-sm-4">
       <?php get_sidebar( 'blog' ); ?>
     </div>
-  </article>
+  </div>
 </div>
 <?php get_footer(); ?>
 

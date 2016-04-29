@@ -12,7 +12,7 @@
   <body <?php body_class(); ?>>
 
     <section class="navbar-wrapper">
-        <nav class="navbar navbar-inverse navbar-static-top">
+        <nav class="navbar navbar-static-top">
           <div class="container">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header-navbar-collapse" aria-expanded="false">

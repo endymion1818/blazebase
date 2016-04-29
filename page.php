@@ -12,16 +12,16 @@ get_header(); ?>
       <div class="col-sm-8">
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-          <div class="page-header">
+          <header class="page-header">
             <h1><?php the_title(); ?></h1>
-          </div>
+          </header>
           <?php the_content(); ?>
 
         <?php endwhile; endif; ?>
     </div>
-    <div class="col-sm-4">
+    <aside class="col-sm-4">
       <?php get_sidebar(); ?>
-    </div>
+    </aside>
   </div>
 </div>
 <?php get_footer(); ?>
