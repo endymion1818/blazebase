@@ -17,7 +17,7 @@ get_header(); ?>
           </header>
           <?php the_content(); ?>
 
-        <? endwhile; endif; ?>
+        <?php endwhile; endif; ?>
     </div>
     <aside class="col-sm-4">
       <!-- Ideally this should be empty to aid user concentration -->
@@ -25,5 +25,3 @@ get_header(); ?>
   </div>
 </div>
 <?php get_footer(); ?>
-
-  <!-- /END THE FEATURETTES -->

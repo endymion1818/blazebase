@@ -14,8 +14,8 @@ get_header(); ?>
         <header class="page-header">
           <h1><?php wp_title(''); ?></h1>
         </header>
-        <article class="post-excerpt">
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+          <article class="post-excerpt">
           <h2><a href="<?php the_permalink() ;?>"><?php the_title(); ?></a></h2>
           <p><em>
             By <?php the_author(); ?>
@@ -39,5 +39,3 @@ get_header(); ?>
   </div>
 </div>
 <?php get_footer(); ?>
-
-  <!-- /END THE FEATURETTES -->
