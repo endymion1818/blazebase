@@ -9,6 +9,9 @@ A few settings to avoid overwriting the config file when using different develop
 **htaccess-sample.txt**
 A few server settings such as enabling gZip (if possible), SVG support and maintenance mode settings when required.
 
+**dummycontent.xml**
+Some basic pages and posts to get you started
+
 ## A Few Notes
 
 This theme is meant to be very basic. It's a good starting point if you want the convenience of the following setup in a Wordpress theme:
@@ -20,7 +23,4 @@ This theme is meant to be very basic. It's a good starting point if you want the
 - A template for wp-config.php so that you can work on seperate versions without having to worry about rewrites deleting your database information
 - A template for htaccess (Apache server config file) that enables gZip by default and adds server support for svg files
 
-There are currently no templates for this site. It's assumed you will already be familiar with Bootstrap and PHP and be able to pick this up. However, I do plan to include some templates in the future.
-
-## To Do
-- Move to PostCSS
+Enjoy :-)
