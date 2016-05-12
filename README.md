@@ -1,6 +1,8 @@
 # blazebase
 A starting point Wordpress theme with SASS Bootstrap set up, Grunt modules and a few basic templates.
 
+Theme URI on Github: [Theme on Github](https://github.com/endymion1818/blazebase)
+
 ## This theme also contains:
 
 **wp-config-sample**
