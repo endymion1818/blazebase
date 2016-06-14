@@ -50,22 +50,6 @@ body {
 .navbar-inverse .navbar-toggle span {
 	color: #999;
 }
-.hamburger {
-	display: inline-block;
-	margin-left: 5px;
-}
-.phone {
-	color: inherit;
-	text-decoration: none;
-	cursor:default;
-
-	&:hover,
-	&:active {
-		color: inherit;
-		text-decoration: none;
-	}
-}
-
 .searchform {
 
 	input[type="text"] {
