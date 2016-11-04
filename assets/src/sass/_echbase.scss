@@ -5,6 +5,37 @@ body {
 .ajax-loader {
 	width: 16px;
 }
+.navbar-header,
+.navbar-nav {
+	width: 100%;
+}
+.pull-right {
+	float: none;
+}
+@media (min-width: 768px){
+
+	.pull-right {
+		float: right;
+	}
+}
+// sub menu
+.sub-menu li {
+	margin-bottom: 10px;
+	list-style: none;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+	a  {
+		color: #999;
+		text-decoration: none;
+
+		&:hover,
+		&:active {
+			color: #fff;
+		}
+	}
+}
 @media (min-width:768px) {
 	.sub-menu {
 		display: none;
@@ -17,23 +48,6 @@ body {
 	li:hover .sub-menu {
 		display: block;
 	}
-}
-.sub-menu li {
-	margin-bottom: 10px;
-	list-style: none;
-}
-
-.sub-menu li:last-child {
-	margin-bottom: 0;
-}
-
-.sub-menu a  {
-	color: #999;
-	text-decoration: none;
-}
-
-.sub-menu a:hover  {
-	color: #fff;
 }
 .navbar-nav {
 	> .current-menu-item > a, .current-menu-parent > a {

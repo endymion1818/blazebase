@@ -35,5 +35,15 @@
 
 </div><!-- /.container -->
 <?php wp_footer(); ?>
+<script type="text/javascript">
+// Mustard Cutting
+if ('querySelector' in document && 'addEventListener' in window) {
+	var windowWidth = document.body.clientWidth;
+	if(windowWidth > 768){
+			document.write('<script src="../assets/js/project-noncritical.min.js" defer><\/script>');
+			(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement);
+		}
+}
+</script>
 </body>
 </html>

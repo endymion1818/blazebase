@@ -3,7 +3,7 @@
  * Template name: Full Width Page Template
  *
  * @package    WordPress
- * @subpackage BlazeBase
+ * @subpackage EchBase
  */
 get_header(); ?>
 

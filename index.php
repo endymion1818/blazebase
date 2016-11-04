@@ -3,7 +3,7 @@
  * Description: Catch all template
  *
  * @package    WordPress
- * @subpackage BlazeBase
+ * @subpackage EchBase
  */
 get_header(); ?>
 

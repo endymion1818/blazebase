@@ -15,7 +15,7 @@
         <nav class="navbar navbar-static-top">
           <div class="container">
             <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header-navbar-collapse" aria-expanded="false">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#headernavbar" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -30,7 +30,7 @@
                   height="auto"
                 >
               </a>
-              <nav id="navbar" class="navbar-collapse collapse">
+              <nav id="headernavbar" class="navbar-collapse collapse">
                 <?php
                   $args = array(
                     'theme_location' => 'header',
